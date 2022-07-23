@@ -23,6 +23,7 @@ done
 
 kill -s KILL $serve_pid
 
+./genfstab.sh
 ./cp.sh
 ./locale-gen.sh
 ./arch-chroot.sh
