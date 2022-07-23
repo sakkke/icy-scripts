@@ -23,5 +23,6 @@ done
 
 kill -s KILL $serve_pid
 
+./arch-chroot.sh
 ./passwd.sh
 ./grub-install.sh
