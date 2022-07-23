@@ -1,0 +1,3 @@
+/arch/
+/icy/icy/os/x86_64/*
+!/icy/icy/os/x86_64/sync.sh
