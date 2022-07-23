@@ -2,4 +2,4 @@
 
 set -eux
 
-arch-chroot /mnt /bin/bash -c 'echo root:root | chpasswd'
+arch-chroot /mnt /bin/bash -c 'passwd -l root'
