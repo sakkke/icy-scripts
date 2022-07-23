@@ -24,6 +24,7 @@ done
 kill -s KILL $serve_pid
 
 ./cp.sh
+./locale-gen.sh
 ./arch-chroot.sh
 ./passwd.sh
 ./grub-install.sh
