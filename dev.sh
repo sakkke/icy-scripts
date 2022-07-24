@@ -22,7 +22,7 @@ else
 	done
 
 	./mount.sh "$device"
-	./pacstrap.sh < packages.x86_64
+	./pacstrap.sh /mnt - < packages.x86_64
 
 	kill -s KILL $serve_pid
 
