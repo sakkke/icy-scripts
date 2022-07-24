@@ -17,7 +17,6 @@ while true; do
 	sleep 1
 done
 
-./setup.sh
 ./mount.sh "$device"
 ./pacstrap.sh
 

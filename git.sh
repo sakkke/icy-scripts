@@ -13,7 +13,6 @@ while true; do
 	sleep 1
 done
 
-./setup.sh
 ./setup-dev.sh
 
 kill -s KILL $serve_pid
