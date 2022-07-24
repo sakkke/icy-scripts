@@ -2,4 +2,4 @@
 
 set -eux
 
-cat | pacstrap -C /icy/pacman.conf /mnt --color auto --noprogressbar -
+cat | pacstrap -C /icy/pacman.conf /mnt -
