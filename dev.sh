@@ -6,21 +6,28 @@ device="$1"
 
 umount --recursive /mnt || true
 
-./serve.sh &
-serve_pid=$!
+if [[ -f /icy/build/rootfs-latest.tar.gz ]]; then
+	./mount.sh "$device"
+	./extract-rootfs.sh
+else
+	./serve.sh &
+	serve_pid=$!
 
-while true; do
-	if curl --max-time 2 --output /dev/null http://localhost:8080/sync.sh; then
-		break
-	fi
+	while true; do
+		if curl --max-time 2 --output /dev/null http://localhost:8080/sync.sh; then
+			break
+		fi
 
-	sleep 1
-done
+		sleep 1
+	done
 
-./mount.sh "$device"
-./pacstrap.sh < packages.x86_64
+	./mount.sh "$device"
+	./pacstrap.sh < packages.x86_64
 
-kill -s KILL $serve_pid
+	kill -s KILL $serve_pid
+
+	./rootfs.sh
+fi
 
 ./genfstab.sh
 ./cp.sh
