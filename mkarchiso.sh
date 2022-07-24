@@ -2,7 +2,9 @@
 
 set -eux
 
-./serve.sh &
+cwd=$(cd "$(dirname "$0")" && pwd)
+
+"$cwd/serve.sh" &
 serve_pid=$!
 
 while true; do
@@ -13,8 +15,6 @@ while true; do
 	sleep 1
 done
 
-mount -o remount,size=3G /run/archiso/cowspace
-pacman --config /icy/pacman.conf -Sy
-pacman --config /icy/pacman.conf --needed --noconfirm "$@"
+mkarchiso -C /icy/pacman.conf "$@"
 
 kill -s KILL $serve_pid
