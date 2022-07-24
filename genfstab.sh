@@ -2,4 +2,4 @@
 
 set -eux
 
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -t PARTUUID /mnt >> /mnt/etc/fstab
