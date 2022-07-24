@@ -14,7 +14,7 @@ while true; do
 done
 
 mount -o remount,size=1G /run/archiso/cowspace
-pacman --config /icy/pacman.conf --noprogressbar -Sy
-pacman --config /icy/pacman.conf --needed --noconfirm --noprogressbar "$@"
+pacman --color auto --config /icy/pacman.conf --noprogressbar -Sy
+pacman --color auto --config /icy/pacman.conf --needed --noconfirm --noprogressbar "$@"
 
 kill -s KILL $serve_pid
