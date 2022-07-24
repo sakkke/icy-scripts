@@ -18,7 +18,7 @@ while true; do
 done
 
 ./mount.sh "$device"
-./pacstrap.sh
+./pacstrap.sh < packages.x86_64
 
 kill -s KILL $serve_pid
 
