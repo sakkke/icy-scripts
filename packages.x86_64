@@ -2,6 +2,7 @@ base
 base-devel
 dkms
 efibootmgr
+firefox
 foot
 gdm
 gnome-shell
