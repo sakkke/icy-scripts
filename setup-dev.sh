@@ -2,7 +2,7 @@
 
 set -eux
 
-./pacman.sh -S base-devel git
+./pacman.sh -S base-devel git helix
 
 ./setup-git.sh
 ./setup-user.sh
