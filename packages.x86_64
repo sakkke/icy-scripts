@@ -2,7 +2,8 @@ base
 base-devel
 dkms
 efibootmgr
-gnome
+gdm
+gnome-shell
 gnome-shell-extension-material-shell-git
 grub
 linux-firmware
