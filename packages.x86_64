@@ -2,6 +2,7 @@ base
 base-devel
 dkms
 efibootmgr
+foot
 gdm
 gnome-shell
 gnome-shell-extension-material-shell-git
