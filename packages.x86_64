@@ -3,6 +3,7 @@ base-devel
 dkms
 efibootmgr
 gnome
+gnome-shell-extension-material-shell-git
 grub
 linux-firmware
 linux-xanmod
