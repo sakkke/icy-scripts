@@ -16,6 +16,6 @@ while true; do
 done
 
 chown -R user:user .
-sudo -u user makepkg --noconfirm -s
+sudo -u user makepkg --noconfirm -s "$@"
 
 kill -s KILL $serve_pid
