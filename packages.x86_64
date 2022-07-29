@@ -5,8 +5,8 @@ efibootmgr
 gnome
 grub
 linux-firmware
-linux-zen
-linux-zen-headers
+linux-xanmod
+linux-xanmod-headers
 networkmanager
 noto-fonts
 noto-fonts-cjk
