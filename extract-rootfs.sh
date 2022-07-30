@@ -2,4 +2,4 @@
 
 set -eux
 
-tar -C /mnt -xf /icy/build/rootfs-latest.tar.gz
+tar -C /mnt -xf /icy/build/rootfs-latest.tar

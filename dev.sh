@@ -6,7 +6,7 @@ device="$1"
 
 umount --recursive /mnt || true
 
-if [[ -f /icy/build/rootfs-latest.tar.gz ]]; then
+if [[ -f /icy/build/rootfs-latest.tar ]]; then
 	./mount.sh "$device"
 	./extract-rootfs.sh
 else
