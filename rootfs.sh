@@ -10,3 +10,6 @@ ln -fs $out /icy/build/rootfs-latest.tar
 
 ./compress-gz.sh $out
 ln -fs $out.gz /icy/build/rootfs-latest.tar.gz
+
+./compress-zst.sh $out
+ln -fs $out.zst /icy/build/rootfs-latest.tar.zst
