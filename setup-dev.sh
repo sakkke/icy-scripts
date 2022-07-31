@@ -7,5 +7,6 @@ set -eux
 ./setup-git.sh
 ./setup-user.sh
 ./pacman_conf.sh
+./setup-archiso.sh
 
 ./swapon.sh
