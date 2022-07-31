@@ -1,0 +1,6 @@
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/catppuccin-wallpapers/gradients/magenta_blue.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'

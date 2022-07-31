@@ -25,4 +25,5 @@ fi
 ./locale-gen.sh
 ./arch-chroot.sh
 ./passwd.sh
+./dconf-update.sh
 ./grub-install.sh
