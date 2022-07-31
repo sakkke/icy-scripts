@@ -9,3 +9,4 @@ git clone https://aur.archlinux.org/linux-xanmod.git || true
 git clone https://aur.archlinux.org/microsoft-edge-stable-bin.git || true
 git clone https://aur.archlinux.org/paru-bin.git || true
 git clone https://aur.archlinux.org/tabby-bin.git || true
+git clone https://aur.archlinux.org/visual-studio-code-bin.git || true
