@@ -12,6 +12,7 @@ icy-utils
 linux-firmware
 linux-xanmod
 linux-xanmod-headers
+moreutils
 networkmanager
 noto-fonts
 noto-fonts-cjk
