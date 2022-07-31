@@ -5,7 +5,6 @@ catppuccin-wallpapers-git
 dkms
 efibootmgr
 firefox
-foot
 gdm
 gnome-control-center
 gnome-shell-extensions
@@ -24,3 +23,4 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 paru-bin
+tabby-bin
