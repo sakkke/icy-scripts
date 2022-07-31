@@ -4,7 +4,6 @@ catppuccin-gtk-theme
 catppuccin-wallpapers-git
 dkms
 efibootmgr
-firefox
 gdm
 gnome-control-center
 gnome-shell-extensions
@@ -16,6 +15,7 @@ icy-utils
 linux-firmware
 linux-xanmod
 linux-xanmod-headers
+microsoft-edge-stable-bin
 moreutils
 networkmanager
 noto-fonts
