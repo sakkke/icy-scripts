@@ -4,6 +4,8 @@ set -eux
 
 device="$1"
 
+./swapon.sh || true
+
 umount --recursive /mnt || true
 
 if [[ -f /icy/build/rootfs-latest.tar ]]; then
@@ -16,7 +18,9 @@ else
 	./rootfs.sh
 fi
 
+./swapoff.sh
 ./genfstab.sh
+./swapon.sh
 ./cp.sh
 ./locale-gen.sh
 ./arch-chroot.sh
