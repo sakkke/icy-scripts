@@ -1,0 +1,10 @@
+pkgname=icy-utils
+pkgver=2022.07.0
+pkgrel=1
+arch=(any)
+source=(vi-dconf)
+sha256sums=(SKIP)
+
+package() {
+	install -Dm755 "$srcdir/vi-dconf" "$pkgdir/usr/bin/vi-dconf"
+}

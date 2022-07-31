@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dconf=/usr/bin/dconf
+vipe=/usr/bin/vipe
+
+$dconf dump / | $vipe | $dconf load /
