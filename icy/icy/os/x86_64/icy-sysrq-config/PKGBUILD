@@ -1,0 +1,10 @@
+pkgname=icy-sysrq-config
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+source=(60-sysrq.conf)
+sha256sums=(SKIP)
+
+package() {
+	install -Dm755 "$srcdir/60-sysrq.conf" "$pkgdir/usr/lib/sysctl.d/60-sysrq.conf"
+}
