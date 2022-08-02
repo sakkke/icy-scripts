@@ -1,11 +1,14 @@
 [org/gnome/shell/extensions/materialshell/layouts]
 default-layout='half'
-gap=32
+gap=36
 
 [org/gnome/shell/extensions/materialshell/theme]
+blur-background=true
 clock-horizontal=true
 horizontal-panel-position='bottom'
 panel-opacity=50
+panel-size=36
 primary-color='#7287fd'
+surface-opacity=0
 taskbar-item-style='icon'
 vertical-panel-position='right'
