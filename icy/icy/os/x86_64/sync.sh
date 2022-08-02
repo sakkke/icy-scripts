@@ -2,6 +2,7 @@
 
 set -eux
 
+git clone https://aur.archlinux.org/catppuccin-grub-theme-git.git || true
 git clone https://aur.archlinux.org/catppuccin-gtk-theme.git || true
 git clone https://aur.archlinux.org/catppuccin-wallpapers-git.git || true
 git clone https://aur.archlinux.org/font-victor-mono.git || true
