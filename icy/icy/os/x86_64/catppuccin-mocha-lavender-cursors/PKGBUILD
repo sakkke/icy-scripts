@@ -1,0 +1,11 @@
+pkgname=catppuccin-mocha-lavender-cursors
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+source=(https://raw.githubusercontent.com/catppuccin/cursors/main/cursors/Catppuccin-Mocha-Lavender-Cursors.zip)
+sha256sums=(SKIP)
+
+package() {
+	install -dm755 "$pkgdir/usr/share/icons"
+	cp -RT "$srcdir/Catppuccin-Mocha-Lavender-Cursors" "$pkgdir/usr/share/icons/Catppuccin-Mocha-Lavender-Cursors"
+}
