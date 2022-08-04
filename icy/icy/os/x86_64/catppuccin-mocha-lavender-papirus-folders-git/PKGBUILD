@@ -1,0 +1,40 @@
+pkgbasename=catppuccin-mocha-lavender-papirus-folders
+pkgname=catppuccin-mocha-lavender-papirus-folders-git
+pkgver=r13.6041a9ad
+pkgrel=1
+arch=(any)
+depends=(papirus-icon-theme)
+url=https://github.com/catppuccin/papirus-folders
+
+source=(
+	"$pkgbasename::git+$url.git"
+	"$pkgname-install"
+	"$pkgname-install.hook"
+	"$pkgname-remove"
+	"$pkgname-remove.hook"
+	"$pkgname-upgrade.hook"
+)
+
+sha256sums=(
+	SKIP
+	SKIP
+	SKIP
+	SKIP
+	SKIP
+	SKIP
+)
+
+pkgver() {
+	cd "$srcdir/$pkgbasename"
+	printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	install -dm755 "$pkgdir/usr/share/$pkgbasename"
+	cp -R "$srcdir/$pkgbasename/"{papirus-folders,src} "$pkgdir/usr/share/$pkgbasename"
+	install -Dm755 "$srcdir/$pkgname-install" "$pkgdir/usr/share/libalpm/scripts/$pkgname-install"
+	install -Dm644 "$srcdir/$pkgname-install.hook" "$pkgdir/usr/share/libalpm/hooks/$pkgname-install.hook"
+	install -Dm755 "$srcdir/$pkgname-remove" "$pkgdir/usr/share/libalpm/scripts/$pkgname-remove"
+	install -Dm644 "$srcdir/$pkgname-remove.hook" "$pkgdir/usr/share/libalpm/hooks/$pkgname-remove.hook"
+	install -Dm644 "$srcdir/$pkgname-remove.hook" "$pkgdir/usr/share/libalpm/hooks/$pkgname-upgrade.hook"
+}
