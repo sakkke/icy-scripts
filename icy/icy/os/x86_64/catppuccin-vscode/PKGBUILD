@@ -1,0 +1,11 @@
+pkgname=catppuccin-vscode
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+source=(catppuccin.catppuccin-vsc-1.0.6.tar.zst)
+sha256sums=(SKIP)
+
+package() {
+	install -dm755 "$pkgdir/etc/skel/.vscode/extensions"
+	cp -RT "$srcdir/catppuccin.catppuccin-vsc-1.0.6" "$pkgdir/etc/skel/.vscode/extensions/catppuccin.catppuccin-vsc-1.0.6"
+}
