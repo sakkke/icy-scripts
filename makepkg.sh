@@ -17,4 +17,5 @@ while true; do
 done
 
 chown -R user:user .
+pacman -Sy
 sudo -u user makepkg --noconfirm -s "$@"
