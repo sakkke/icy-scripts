@@ -1,0 +1,11 @@
+pkgname=icy-visual-studio-code-config
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+depends=(catppuccin-vscode)
+source=(settings.json)
+sha256sums=(SKIP)
+
+package() {
+	install -Dm644 "$srcdir/settings.json" "$pkgdir/etc/skel/.config/Code/User/settings.json"
+}
