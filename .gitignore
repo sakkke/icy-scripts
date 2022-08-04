@@ -1,6 +1,7 @@
 /arch/
 /icy/icy/os/x86_64/*
 !/icy/icy/os/x86_64/sync.sh
+!/icy/icy/os/x86_64/catppuccin-mocha-helix-git/
 !/icy/icy/os/x86_64/catppuccin-mocha-lavender-cursors/
 !/icy/icy/os/x86_64/catppuccin-mocha-lavender-papirus-folders-git/
 !/icy/icy/os/x86_64/catppuccin-vscode/

@@ -1,0 +1,17 @@
+pkgbasename=catppuccin-mocha-helix
+pkgname=catppuccin-mocha-helix-git
+pkgver=r40.6519750
+pkgrel=1
+arch=(any)
+url=https://github.com/catppuccin/helix
+source=("$pkgbasename::git+$url.git")
+sha256sums=(SKIP)
+
+pkgver() {
+	cd "$srcdir/$pkgbasename"
+	printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	install -Dm644 "$srcdir/$pkgbasename/themes/default/catppuccin_mocha.toml" "$pkgdir/etc/skel/.config/helix/themes/catppuccin_mocha.toml"
+}
