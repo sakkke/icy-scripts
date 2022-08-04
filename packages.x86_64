@@ -21,6 +21,7 @@ grub
 helix
 icy-helix-config
 icy-sysrq-config
+icy-tabby-config
 icy-utils
 icy-visual-studio-code-config
 linux-firmware

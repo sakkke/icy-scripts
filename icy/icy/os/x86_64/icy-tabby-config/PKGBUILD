@@ -1,0 +1,10 @@
+pkgname=icy-tabby-config
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+source=(config.yaml)
+sha256sums=(SKIP)
+
+package() {
+	install -Dm644 "$srcdir/config.yaml" "$pkgdir/etc/skel/.config/tabby/config.yaml"
+}
