@@ -1,0 +1,11 @@
+pkgname=icy-helix-config
+pkgver=2022.08.0
+pkgrel=1
+arch=(any)
+depends=(catppuccin-mocha-helix-git)
+source=(config.toml)
+sha256sums=(SKIP)
+
+package() {
+	install -Dm644 "$srcdir/config.toml" "$pkgdir/etc/skel/.config/helix/config.toml"
+}
